@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /*
- * main - THis is a program that assgin random number
+ * main - Print if number is positive, zero or negaive
  *
- * Return: 0
+ * Return: Always (success)
  *
 */
 int main(void)
