@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /*
- * main - This program will assign a random number
+ * main - THis is a program that assgin random number
  *
  * Return: 0
  *
