@@ -8,4 +8,4 @@
 
 int main(void)
 {
-	wrtie(2, 
+	wrtie(2,
