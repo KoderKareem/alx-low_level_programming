@@ -4,7 +4,6 @@
 
 /*
  * main - Print if number is positive, zero or negaive
- *
  * Return: Always (success)
  *
 */
