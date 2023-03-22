@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 
 /*
 * main - print all the the in lower case
