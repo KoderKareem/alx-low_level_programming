@@ -1,16 +1,26 @@
 #include "main.h"
-/**
- * _strlen - return the length of a string
- * Owned By Bwave
- * @s: char to check
- * Description: this will return the length of a string
- * Return: 0 is success
- */
-int _strlen(char *s)
-{
-	int a = 0;
 
-	for (; *s++;)
-		a++;
-	return (a);
+/**
+ * _strncat - concatenates two strings
+ *
+ * @src: The source of strings
+ * @dest: The destination of the string
+ * @n: The length of int
+ *
+ * Return: pointer to the resulting string dest
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	int i, j;
+
+	for (i = 0; dest[i] != '\0'; i++)
+	{
+		continue;
+	}
+	for (j = 0; src[j] != '\0' && j < n; j++)
+	{
+		dest[i + j] = src[j];
+	}
+	dest[i + j] = '\0';
+	return (dest);
 }
