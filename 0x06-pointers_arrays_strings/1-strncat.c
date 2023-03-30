@@ -1,15 +1,16 @@
 #include "main.h"
 /**
-* swap_int - swaps the value of int a and int b
-* @a: first int
-* @b: second int
-* Return 0
-*/
-void swap_int(int *a, int *b)
+ * _strlen - return the length of a string
+ * Owned By Bwave
+ * @s: char to check
+ * Description: this will return the length of a string
+ * Return: 0 is success
+ */
+int _strlen(char *s)
 {
-		int s;
+	int a = 0;
 
-		s = *a;
-		*a = *b;
-		*b = s;
+	for (; *s++;)
+		a++;
+	return (a);
 }
