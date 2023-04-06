@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 /*
 * main - this program will print a string
 *
