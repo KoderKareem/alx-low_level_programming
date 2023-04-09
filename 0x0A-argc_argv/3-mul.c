@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - multiplies two numbers.
- * 
+ * main - multiplies two numbers. 
  * Return: (0);
  */
 int main(int argc, char **argv)
