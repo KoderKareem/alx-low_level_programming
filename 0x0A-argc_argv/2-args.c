@@ -1,4 +1,4 @@
-#nclude <stdio.h>
+#include <stdio.h>
 
 /**
 * main - this program will print all args pass to it.
@@ -8,11 +8,12 @@
 * Return: (0);
 */
 
-int main(int agrc, *char argv)
+int main(int agrc, char *argv[])
 {
+	int i;
 	for (i = 0; i < agrc; i++)
 	{
-	printf("%s", argv[i]);
+	printf("%s\n", argv[i]);
 	}
 	
 	return (0);
