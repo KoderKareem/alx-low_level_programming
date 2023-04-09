@@ -1,5 +1,6 @@
 /*
-* main- this program will print its name
+* main - This program will print its name.
+*
 * Return: (0);
 */
 #include <stdio.h>
