@@ -3,7 +3,7 @@
  * _puts_recursion- print recursion
  *
  * main- this program will pring recurtion
- * *s- i pointer to a char
+ * S- this is a pointer to s
  */
 void _puts_recursion(char *s)
 {
