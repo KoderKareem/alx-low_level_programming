@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * _print_rev_recursion - print recursion in revers
+ * _print_rev_recursion - this fuction is program to prot rec in rev
  *
  * @s- poniter to s
  */
