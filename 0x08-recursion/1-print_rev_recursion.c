@@ -1,13 +1,13 @@
 #include <stdio.h>
 /*
- * _print_rev_recursion- print recursion in revers
+ * _print_rev_recursion - print recursion in revers
  *
  * @s- poniter to s
  */
 
 void _print_rev_recursion(char *s)
 {
-	if(*s == '\0')
+	if (*s == '\0')
 	{
 		return;
 	}
