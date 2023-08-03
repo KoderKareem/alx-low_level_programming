@@ -7,7 +7,7 @@
 * @n: nponter:
 */
 
-int is_prime_helper(int n, int divisor)
+int is_prime_number(int n int divisor)
 {
 	if (divisor == 1)
 	{
