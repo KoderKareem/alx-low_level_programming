@@ -8,7 +8,7 @@
  * @start: pointer to start
  * @end: pointer to int
  */
-int _sqrt_recursion_helper(int n, int start, int end)
+int _sqrt_recursion(int n, int start, int end)
 {
 	if (start > end)
 	{
