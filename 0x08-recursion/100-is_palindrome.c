@@ -9,9 +9,9 @@
 
 int is_palindrome(char *s)
 {
-	int length = strlen(s)l
+	int length = strlen(s);
 		int i, j;
-	for (i = 0; j = length - 1; i < j; i++; j--)
+	for (i = 0, j = length - 1; i < j; i++, j--)
 	{
 		if (s[i] != s[j])
 		{
