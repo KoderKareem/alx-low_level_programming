@@ -5,7 +5,7 @@
 *
 *
 */
-char *create_array(unsigned int size, char *c)
+char *create_array(unsigned int size, char c)
 {
 	char* char_array = (char*)malloc(sizeof(char) * size);
 
@@ -13,6 +13,11 @@ char *create_array(unsigned int size, char *c)
 	{
 		printf("it is not possible to create an array with zero size\n");
 		return NULL;
+	}
+	if (size == NULL)
+	{
+		printf("Memory not available\n");
+		exit(1);
 	}
 
 	for (int i = 0; i < size; i++)
