@@ -5,7 +5,7 @@
 *
 *
 */
-char *create_array(unsigned int size, char c)
+void *create_array(unsigned int size, char c)
 {
 	if (size == 0)
 	{
@@ -14,7 +14,7 @@ char *create_array(unsigned int size, char c)
 
 	char *array = (char *)malloc(size * sizeof(char));
 	
-	if (size == NULL)
+	if (size == '\n')
 	{
 	return NULL;
 	}
