@@ -14,14 +14,9 @@ char *create_array(unsigned int size, char c)
 
 	char *array = (char *)malloc(size * sizeof(char));
 	
-	if (array == NULL)
+	if (size == NULL)
 	{
-	return NULL; // Failed to allocate memory
-	}
-
-	for (unsigned int i = 0; i < size; i++)
-	{
-	array[i] = c;
+	return NULL;
 	}
 
 	return array;
