@@ -10,17 +10,12 @@
  */
 int main(int argc, char *argv[])
 {
-    if (argc > 0)
+    if (argc >= 0)
     {
         char *program_name = argv[0];
-        char *program_name_only = strrchr(program_name, '/');
-        
-        if (program_name_only)
-            program_name_only++;
-        else
-            program_name_only = program_name;
-        
-        printf("%s\n", program_name_only);
+       
+               
+        printf("%s\n", program_name);
     }
 
     return (0);
