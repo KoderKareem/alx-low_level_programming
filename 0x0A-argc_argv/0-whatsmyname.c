@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - Entry point
@@ -10,13 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-    if (argc >= 0)
-    {
-        char *program_name = argv[0];
-       
-               
-        printf("%s\n", program_name);
-    }
+	if (argc >= 0)
+	{
+		char *program_name = argv[0];
 
-    return (0);
+		printf("%s\n", program_name);
+	}
+
+	return (0);
 }
