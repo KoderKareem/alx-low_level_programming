@@ -7,23 +7,22 @@
 */
 char *create_array(unsigned int size, char c)
 {
-	char* char_array = (char*)malloc(sizeof(char) * size);
-
 	if (size == 0)
 	{
-		printf("it is not possible to create an array with zero size\n");
-		return NULL;
-	}
-	if (size == NULL)
-	{
-		printf("Memory not available\n");
-		exit(1);
+	return NULL;
 	}
 
-	for (int i = 0; i < size; i++)
+	char *array = (char *)malloc(size * sizeof(char));
+	
+	if (array == NULL)
 	{
-	char_array[i] = c;
+	return NULL; // Failed to allocate memory
 	}
 
-	return char_array;
+	for (unsigned int i = 0; i < size; i++)
+	{
+	array[i] = c;
+	}
+
+	return array;
 }
