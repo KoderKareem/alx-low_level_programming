@@ -1,19 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include <string.h>
 
 char *create_array(unsigned int size, char c) {
+    char *array;
+
     if (size == 0) {
         return NULL;
     }
 
-    char *array = (char *)malloc(size * sizeof(char));
+    array = (char *)malloc(size * sizeof(char));
     if (array == NULL) {
-        return NULL; // Failed to allocate memory
+        return NULL; /* Failed to allocate memory */
     }
 
-    // Use memset to initialize the array with the given character
-    memset(array, c, size);
+    {
+        unsigned int i;
+        for (i = 0; i < size; i++) {
+            array[i] = c;
+        }
+    }
 
     return array;
 }
