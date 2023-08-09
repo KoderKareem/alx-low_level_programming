@@ -7,15 +7,13 @@ char *create_array(unsigned int size, char c) {
         return NULL;
     }
 
-    char *array;
-   *array = (char *)malloc(size * sizeof(char));
+    char *array = (char *)malloc(size * sizeof(char));
     if (array == NULL) {
-        return NULL; 
+        return NULL; // Failed to allocate memory
     }
 
-    for (unsigned int i = 0; i < size; i++) {
-        array[i] = c;
-    }
+    // Use memset to initialize the array with the given character
+    memset(array, c, size);
 
     return array;
 }
