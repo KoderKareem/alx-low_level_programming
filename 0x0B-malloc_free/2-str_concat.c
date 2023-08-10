@@ -22,10 +22,12 @@ char *str_concat(char *s1, char *s2)
 	return (NULL);
 
 
-	for (int i = 0; i < s1_length; i++)
+	int i;
+	for (i = 0; i < s1_length; i++)
 	result[i] = s1[i];
 
-	for (int j = 0; j < s2_length; j++)
+	int j;
+	for (j = 0; j < s2_length; j++)
 	result[i + j] = s2[j];
 
 	result[i + j] = '\0';
