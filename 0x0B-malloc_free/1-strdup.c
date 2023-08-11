@@ -11,13 +11,11 @@
 char *_strdup(char *str)
 {
     char *dup_str;
-
-	if (str == NULL)
-        return NULL;
-
-    char *dup_str;
     int length = 0;
     int i;
+
+    if (str == NULL)
+        return NULL;
 
     /* Calculate the length of the input string */
     while (str[length] != '\0')
@@ -34,4 +32,23 @@ char *_strdup(char *str)
         dup_str[i] = str[i];
 
     return dup_str;
+}
+
+int main(void)
+{
+    char *original = "Hello, world!";
+    char *duplicate = _strdup(original);
+
+    if (duplicate != NULL)
+    {
+        printf("Original: %s\n", original);
+        printf("Duplicate: %s\n", duplicate);
+        free(duplicate);
+    }
+    else
+    {
+        printf("Memory allocation failed.\n");
+    }
+
+    return 0;
 }
