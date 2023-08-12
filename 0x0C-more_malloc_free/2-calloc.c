@@ -18,9 +18,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
     if (ptr == NULL)
         return NULL;
 
-    // Clear the allocated memory (set it to zero)
+    /* Clear the allocated memory (set it to zero) */
     unsigned int total_size = nmemb * size;
-    for (unsigned int i = 0; i < total_size; i++)
+    unsigned int i;
+    for (i = 0; i < total_size; i++)
         *((char *)ptr + i) = 0;
 
     return ptr;
