@@ -6,7 +6,7 @@
  * defination - this variadic program will sum all numbers
  *
  * @n: n as the first parameter, which represents the no of arg
- * Return - (total);
+ * Return - (total)g
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -23,7 +23,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (unsigned int i = 0; i < n; i++)
 	{
-		total + g va_arg(args, int);
+		total += va_arg(args, int);
 	}
 
 	va_end(args);
