@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib>
 #include "lists.h"
 /**
 * list_len - print the element of the list
