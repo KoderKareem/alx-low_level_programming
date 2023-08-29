@@ -12,14 +12,14 @@
 
 size_t listint_len(const listint_t *h)
 {
-	int count;
+	int count = 0;
 
 	struct listint_s *ptr = h;
 
 	while (ptr != NULL)
 	{
 		count++;
-		pts = ptr->next;
+		ptr = ptr->next;
 	}
 
 	return (count);
